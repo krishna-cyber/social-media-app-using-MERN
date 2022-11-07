@@ -10,6 +10,9 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
+//importing routes
+const routes = require("./routes/routes");
+app.use("/post", routes);
 //server start and database connection start
 mongoose
   .connect(process.env.MONGODB_URI, {
