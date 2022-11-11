@@ -1,4 +1,8 @@
-import { Typography, Grid, Container, AppBar, Grow } from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import AppBar from "@material-ui/core/AppBar";
+import Grow from "@material-ui/core/Grow";
 
 import Form from "./components/form/Form";
 import Posts from "./components/posts/Posts";
